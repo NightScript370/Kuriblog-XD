@@ -1,0 +1,68 @@
+body
+{
+	font-family: 'Arial', sans-serif;
+	font-size: 10pt;
+	background: black url('greennightbg.png');
+	color: #efe;
+}
+
+a:link, a:active, a:visited, a:hover { text-decoration: none; font-weight: bold; }
+/* uncomment this and enjoy green links */
+/*a:link, a:visited { color: #8f8; }
+a:active, a:hover { color: white; }*/
+/* Acmlmboard link colors */
+a:link 		{ color: #FFC040; }
+a:visited 	{ color: #C09030; }
+a:active 	{ color: #FFEA60; }
+a:hover 	{ color: #FFFFFF; }
+
+table { border-spacing: 0px; border: 0px; }
+td { padding: 0px; }
+
+table.ptable
+{
+	border-collapse: collapse;
+	border: 1px solid #082000;
+	padding: 0px;
+	font-size: 10pt;
+}
+
+table.ptable th
+{
+	background: #041000 url('gradient.png');
+	background-repeat: repeat-x;
+	border: 1px solid #208000;
+	margin: 0px;
+	font-weight: bold;
+}
+
+table.ptable td
+{
+	border: 1px solid #208000;
+	margin: 0px;
+	padding: 1px;
+}
+
+table.ptable td.c1
+{
+	background: #041000;
+}
+
+table.ptable td.c2
+{
+	background: #082000;
+}
+
+input[type='text'], input[type='password'], textarea, select
+{
+	background: black;
+	color: #efe;
+	border: 1px solid #208000;
+}
+
+input[type='submit'], input[type='button'], button
+{
+	background: black;
+	color: #efe;
+	border: 2px solid #208000;
+}

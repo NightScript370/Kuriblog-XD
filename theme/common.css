@@ -1,0 +1,75 @@
+body
+{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+img { border: none!important; }
+
+.left 		{ text-align: left; }
+.center 	{ text-align: center; }
+.right 		{ text-align: right; }
+
+.vtop 		{ vertical-align: top; }
+.vmiddle 	{ vertical-align: middle; }
+.vbottom 	{ vertical-align: bottom; }
+
+.padded { padding: 1em !important; }
+
+.bold { font-weight: bold; }
+.nonbold { font-weight: normal; }
+
+.smaller { font-size: 85%; }
+.larger { font-size: 115%; }
+
+div.maincontainer
+{
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.ptable
+{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1em;
+}
+
+table.ptable#pageheader
+{
+	margin-top: 1em;
+}
+
+form { display: inline; }
+
+/* wee Acmlmboard username colors */
+.uc_-1_1{color:#888888;} .uc_-1_2{color:#888888;} .uc_-1_0{color:#888888;}
+.uc_0_1{color:#97ACEF;} .uc_0_2{color:#F185C9;} .uc_0_0{color:#7C60B0;}
+.uc_1_1{color:#D8E8FE;} .uc_1_2{color:#FFB3F3;} .uc_1_0{color:#EEB9BA;}
+.uc_2_1{color:#AFFABE;} .uc_2_2{color:#C762F2;} .uc_2_0{color:#47B53C;}
+.uc_3_1{color:#FFEA95;} .uc_3_2{color:#C53A9E;} .uc_3_0{color:#F0C413;}
+.uc_4_1{color:#FFEA95;} .uc_4_2{color:#C53A9E;} .uc_4_0{color:#F0C413;}
+
+/* TODO KILL THIS HACK */
+
+table.topstuck
+{
+	margin-top: -1em !important;
+}
+
+table.topstuck tr:first-child td
+{
+	border-top: none !important;
+}
+
+table.bottomstuck
+{
+	margin-bottom: 0px !important;
+}
+
+table.bottomstuck tr:last-child td
+{
+	border-bottom: none !important;
+}
