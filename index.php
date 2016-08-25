@@ -63,12 +63,17 @@ else
 	"	<table class=\"ptable\">
 			<tr>
 				<th class=\"left vtop\">
+					{$userlink}
+				</th>
+				<th class=\"left vtop\">
 					<span style=\"float: right;\" class=\"nonbold\">{$adminopts}</span>
-					{$title}<br>
-					<span class=\"smaller nonbold\">Posted on {$timestamp} by {$userlink}</span>
+					{$title}
 				</th>
 			</tr>
 			<tr>
+				<td class=\"c1 padded left\">
+					<span class=\"smaller nonbold\">Posted on {$timestamp}</span>
+				</td>
 				<td class=\"c1 padded left\">
 					{$text}
 				</td>
