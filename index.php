@@ -79,7 +79,7 @@ else
 				</td>
 			</tr>
 			<tr>
-				<td class=\"c2 right\">
+				<td class=\"c2 right\" colspan="2">
 					{$cmtlink1} | {$cmtlink2}
 				</td>
 			</tr>
