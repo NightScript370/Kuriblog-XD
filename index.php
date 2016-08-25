@@ -71,7 +71,7 @@ else
 				</th>
 			</tr>
 			<tr>
-				<td class=\"c1 padded left\">
+				<td class=\"c1 padded left side\">
 					<span class=\"smaller nonbold\">Posted on {$timestamp}</span>
 				</td>
 				<td class=\"c1 padded left\">
