@@ -37,8 +37,8 @@ else
 		$adminopts = '';
 		if (($mypower >= 3) || (($mypower >= 2) && ($entry['userid'] == $myuserid)))
 		{
-			$adminopts .= "<a href=\"editblogentry.php?id={$entry['id']}\">Edit</a>";
-			$adminopts .= " | <a href=\"editblogentry.php?action=delete&amp;id={$entry['id']}&amp;token={$mytoken}\" 
+			$adminopts .= "<a href=\"editblogentry\?id={$entry['id']}\">Edit</a>";
+			$adminopts .= " | <a href=\"editblogentry\?action=delete&amp;id={$entry['id']}&amp;token={$mytoken}\" 
 				onclick=\"if (!confirm('Really delete this blog entry?')) return false;\">Delete</a>";
 		}
 		
@@ -48,16 +48,16 @@ else
 			$lastlink = htmlspecialchars($entry['guestname']);
 			
 		if ($entry['ncomments'] > 1)
-			$cmtlink1 = "<a href=\"comments.php?id={$entry['id']}\">{$entry['ncomments']} comments</a> (last by ".$lastlink.")";
+			$cmtlink1 = "<a href=\"comments\?id={$entry['id']}\">{$entry['ncomments']} comments</a> (last by ".$lastlink.")";
 		else if ($entry['ncomments'] > 0)
-			$cmtlink1 = "<a href=\"comments.php?id={$entry['id']}\">1 comment</a> (by ".$lastlink.")";
+			$cmtlink1 = "<a href=\"comments\?id={$entry['id']}\">1 comment</a> (by ".$lastlink.")";
 		else
 			$cmtlink1 = "No comments yet";
 			
 		if ($login || GUESTCOMMENTS)
-			$cmtlink2 = "<a href=\"comments.php?id={$entry['id']}&amp;last#post\">Post a comment</a>";
+			$cmtlink2 = "<a href=\"comments\?id={$entry['id']}&amp;last#post\">Post a comment</a>";
 		else
-			$cmtlink2 = "<a href=\"login.php\">Log in</a> to post a comment";
+			$cmtlink2 = "<a href=\"login\">Log in</a> to post a comment";
 		
 		print 
 	"	<table class=\"ptable\">
