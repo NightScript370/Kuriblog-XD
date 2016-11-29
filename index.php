@@ -63,23 +63,18 @@ else
 	"	<table class=\"ptable\">
 			<tr>
 				<th class=\"left vtop\">
-					{$userlink}
-				</th>
-				<th class=\"left vtop\">
 					<span style=\"float: right;\" class=\"nonbold\">{$adminopts}</span>
-					{$title}
+					{$title}<br>
+					<span class=\"smaller nonbold\">Posted on {$timestamp} by {$userlink}</span>
 				</th>
 			</tr>
 			<tr>
-				<td class=\"c1 padded left side\">
-					<span class=\"smaller nonbold\">Posted on {$timestamp}</span>
-				</td>
 				<td class=\"c1 padded left\">
 					{$text}
 				</td>
 			</tr>
 			<tr>
-				<td class=\"c2 right\" colspan=\"2\">
+				<td class=\"c2 right\">
 					{$cmtlink1} | {$cmtlink2}
 				</td>
 			</tr>
